@@ -1,0 +1,28 @@
+- name: "Kalvakota Divakar"
+  dob: "2004-02-23"
+  mobile: "9876543210"
+  addresses:
+  - flat number: 104
+    street: "gandhi road"
+    city: "Hyderabad"
+    type: Current
+
+  - flat number: 104
+    street: "gandhi road"
+    city: "Hyderabad"
+    type: permanent
+
+
+- name: "Kalvakota Divakar"
+  dob: "2004-02-23"
+  mobile: "9876543210"
+  addresses:
+  - flat number: 104
+    street: "gandhi road"
+    city: "Hyderabad"
+    type: Current
+
+  - flat number: 104
+    street: "gandhi road"
+    city: "Hyderabad"
+    type: permanent

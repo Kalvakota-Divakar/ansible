@@ -1,0 +1,53 @@
+{
+    "Students": [ 
+        {
+             "FirstName": "Kalvakota Divakar",
+    "DateOfBirth": "2004-02-23",
+    "Address": [
+        {
+            "Type": "Peremanent",
+            "Street": "123 Main",
+            "City": "Hyderabad"
+        },
+        { 
+            "Type": "Current",
+            "Street": "456 Oak",
+            "City": "Hyderabad"
+            
+        }
+    ],
+    "Skills": [
+        "Python",
+        "Ansible",
+        "Linux",
+        "Cloud"
+    ]
+},
+{
+     
+    "FirstName": "Kalvakota Divakar",
+    "DateOfBirth": "2004-02-23",
+    "Address": [
+        {
+            "Type": "Peremanent",
+            "Street": "123 Main",
+            "City": "Hyderabad"
+        },
+        { 
+            "Type": "Current",
+            "Street": "456 Oak",
+            "City": "Hyderabad"
+            
+        }
+    ],
+    "Skills": [
+        "Python",
+        "Ansible",
+        "Linux",
+        "Cloud"
+    ]
+
+}
+    ]
+}
+   
