@@ -24,7 +24,7 @@
   tasks:
   - name: greeting message
     ansible.builtin.debug:
-      msg: "hello divakar, {{ GREETING | default('good morning')}}"
+      msg: "hello divakar, {{ GREETING | default('good morning') }}"
 
   - name: covert string to list
     ansible.builtin.debug:
@@ -32,7 +32,7 @@
 
   - name: covert map to list
     ansible.builtin.debug:
-      msg: "{{ tagslist| dict2items }}"
+      msg: "{{ tagsmap| dict2items }}"
 
   - name: covert list to map
     ansible.builtin.debug:
