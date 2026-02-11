@@ -3,7 +3,7 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
-    tags:
+    tagslist:
      name: ansible
      project: roboshop
      component: catalogue
@@ -17,4 +17,4 @@
 
   - name: covert map to list
     ansible.builtin.debug:
-      msg: "{{ tags | dictionary2items }}"
+      msg: "{{ tagslist| dictionary2items }}"
