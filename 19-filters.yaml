@@ -1,0 +1,7 @@
+- name: filters example
+  hosts: local
+  connection: local
+  tasks:
+  - name: greeting message
+    ansible.builtin.debug:
+    msg: "hello divakar, {{ GREETINGS}}"
