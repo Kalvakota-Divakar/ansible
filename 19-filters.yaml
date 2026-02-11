@@ -18,6 +18,6 @@
 
   - name: covert map to list
     ansible.builtin.debug:
-      msg: "{{ tagsList| dictionary2items }}"
+      msg: "{{ tagsList| dict2items }}"
 
   
