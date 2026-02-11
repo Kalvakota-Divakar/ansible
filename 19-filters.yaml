@@ -3,10 +3,10 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
-  tags:
-   Name: ansible
-   project: roboshop
-   component: catalogue
+    tags:
+     name: ansible
+     project: roboshop
+     component: catalogue
   tasks:
   - name: greeting message
     ansible.builtin.debug:
