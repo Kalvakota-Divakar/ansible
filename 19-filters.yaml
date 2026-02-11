@@ -3,6 +3,10 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
+  tags:
+   name: ansible
+   project: roboshop
+   component: catalogue
   tasks:
   - name: greeting message
     ansible.builtin.debug:
@@ -10,3 +14,7 @@
   - name: covert string to list
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
+
+  - name: covert map to list
+    ansible.builtin.debug:
+      msg: "{{ tags | dictionary2items }}"
