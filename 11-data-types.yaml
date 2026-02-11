@@ -8,17 +8,17 @@
     DETAILS: # Dictionary
       MODE: "Online"
       INSTRUCTOR: "Divakar"
-      TOPICS: # List - / []
-        - Linux
-        - Ansible
-        - Cloud
-      tasks:
-      - name: print variables
-        ansible.builtin.debug:
-          msg: |
-            Program: {{ PROGRAM }}
-            Duration: {{ DURATION }}
-            Is Live: {{ IS_LIVE }}
-            Details: {{ DETAILS }}
-            Topics: {{ TOPICS }}
+    TOPICS: # List - / []
+    - Linux
+    - Ansible
+    - Cloud
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: |
+        Program: {{ PROGRAM }}
+        Duration: {{ DURATION }}
+        Is Live?: {{ IS_LIVE }}
+        Details: {{ DETAILS }}
+        Topics: {{ TOPICS }}
             
