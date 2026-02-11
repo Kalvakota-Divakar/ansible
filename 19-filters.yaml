@@ -3,7 +3,7 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
-    tagslist:
+    tagsList:
      name: ansible
      project: roboshop
      component: catalogue
@@ -11,10 +11,13 @@
   - name: greeting message
     ansible.builtin.debug:
       msg: "hello divakar, {{ GREETING | default('good morning')}}"
+
   - name: covert string to list
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
 
   - name: covert map to list
     ansible.builtin.debug:
-      msg: "{{ tagslist| dictionary2items }}"
+      msg: "{{ tagsList| dictionary2items }}"
+
+  
