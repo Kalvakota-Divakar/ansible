@@ -8,5 +8,5 @@
     ansible.builtin.debug:
       msg: "hello divakar, {{ GREETING | default('good morning')}}"
   - name: covert string to list
-  ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
