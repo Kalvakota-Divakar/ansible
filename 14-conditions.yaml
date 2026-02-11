@@ -11,7 +11,7 @@
       msg: "Yes,package manager is redhat"
     when: ansible_facts.os_family == "RedHat"
 
-- name: check debian or not
-  ansible.builtin.debug:
-    msg: "Yes,package manager is debian"
-  when: ansible_facts.os_family == "Debian"
+  - name: check debian or not
+    ansible.builtin.debug:
+     msg: "Yes,package manager is debian"
+    when: ansible_facts.os_family == "Debian"
