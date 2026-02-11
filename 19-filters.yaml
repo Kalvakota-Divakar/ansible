@@ -3,10 +3,24 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
-    tagsList:
+    tagsmap:
      name: ansible
      project: roboshop
      component: catalogue
+    tagslist: [
+        {
+            "key": "name",
+            "value": "ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "component",
+            "value": "catalogue"
+        }
+    ]
   tasks:
   - name: greeting message
     ansible.builtin.debug:
@@ -20,4 +34,6 @@
     ansible.builtin.debug:
       msg: "{{ tagsList| dict2items }}"
 
-  
+  - name: covert list to map
+    ansible.builtin.debug:
+      msg: "{{ tagsList| items2dict }}"  
