@@ -5,6 +5,6 @@
   tasks: 
   - name: user creation
     ansible.builtin.user:
-      name: divakar
+      name: johnd
 
   
