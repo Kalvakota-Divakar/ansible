@@ -1,4 +1,5 @@
 - name: Hello World
+  # hosts: web
   hosts: local
   connection: local
   tasks:
